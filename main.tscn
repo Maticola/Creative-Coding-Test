@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="Script" uid="uid://crtdv5djku0ij" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=815201746]
+script = ExtResource("1_ig7tw")
+
+[node name="Button" type="Button" parent="." unique_id=979911122]
+offset_right = 320.0
+offset_bottom = 93.0
+text = "Click to generate!
+"
+
+[node name="HappyLabel" type="Label" parent="." unique_id=1646572342]
+offset_left = 902.0
+offset_top = 10.0
+offset_right = 1148.0
+offset_bottom = 97.0
+text = "Happy faces: 0"
+
+[node name="SadLabel" type="Label" parent="." unique_id=1815252386]
+offset_left = 909.0
+offset_top = 42.0
+offset_right = 1004.0
+offset_bottom = 65.0
+text = "Sad faces : 0"
+
+[node name="FaceContainer" type="Node2D" parent="." unique_id=1484038634]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
